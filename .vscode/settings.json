@@ -1,3 +1,7 @@
 {
+ <<<<<<< sort
     "liveServer.settings.port": 5501
+ =======
+    "git.ignoreLimitWarning": true
+ >>>>>>> main
 }
