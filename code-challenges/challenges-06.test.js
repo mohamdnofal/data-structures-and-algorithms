@@ -56,10 +56,10 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-  return charArray.sort((one,tow) => {
-    if (one.children.length > tow.children.length){return 1;}
-    if (one.children.length < tow.children.length) {return -1;}
-    else{return 0;}
+  return charArray.sort((one, tow) => {
+    if (one.children.length > tow.children.length) { return 1; }
+    if (one.children.length < tow.children.length) { return -1; }
+    else { return 0; }
   });
 };
 
@@ -70,7 +70,8 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
-const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+const courseInfo = {
+  name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
@@ -108,6 +109,7 @@ You are given an object with names and their coresponding phone numbers that loo
   'Alan Turing': '222-853-5933'
 }
 
+HR has asked you to change the data to make it easier to print so that it looks like this: 
 [
   'Grace Hopper: 222-303-5938',
   'Ada Lovelace: 222-349-9842',
@@ -130,6 +132,8 @@ const updateNumbers = (obj) => {
   }
   return arr;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -168,6 +172,9 @@ const hasChildrenValues = (arr, character) => {
     }
   });
   return num_children;
+
+};
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
